@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TableView?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListsetController">
+   <children>
+      <AnchorPane prefHeight="411.0" prefWidth="1000.0" AnchorPane.bottomAnchor="580.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="310.0" layoutY="342.0" mnemonicParsing="false" onAction="#regist" prefHeight="48.0" prefWidth="169.0" text="등록" />
+            <Button layoutX="511.0" layoutY="342.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="56.0" prefWidth="169.0" text="초기화" />
+            <TextField fx:id="usernameField" layoutX="14.0" layoutY="113.0" prefHeight="40.0" prefWidth="207.0" />
+            <TextField fx:id="ageField" layoutX="451.0" layoutY="113.0" prefHeight="56.0" prefWidth="112.0" />
+            <TextField fx:id="nameField" layoutX="231.0" layoutY="113.0" prefHeight="40.0" prefWidth="207.0" />
+            <TextField fx:id="emailField" layoutX="579.0" layoutY="113.0" prefHeight="43.0" prefWidth="407.0" />
+            <RadioButton fx:id="male" layoutX="368.0" layoutY="210.0" mnemonicParsing="false" text="남" />
+            <RadioButton fx:id="female" layoutX="481.0" layoutY="210.0" mnemonicParsing="false" text="여" />
+            <Label fx:id="sexselect" layoutX="250.0" layoutY="212.0" text="성별" />
+            <Button fx:id="waehlen" layoutX="620.0" layoutY="202.0" mnemonicParsing="false" text="선택" />
+         </children>
+      </AnchorPane>
+      <TableView layoutY="414.0" prefHeight="588.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="412.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="192.0" text="userName" />
+          <TableColumn fx:id="name" minWidth="8.0" prefWidth="147.0" text="name" />
+            <TableColumn fx:id="age" minWidth="8.0" prefWidth="127.0" text="age" />
+            <TableColumn fx:id="gender" minWidth="8.0" prefWidth="89.0" text="sex" />
+            <TableColumn fx:id="email" minWidth="8.0" prefWidth="444.0" text="email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
